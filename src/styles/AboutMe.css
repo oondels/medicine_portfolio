@@ -1,0 +1,72 @@
+.about-me {
+  background: linear-gradient(to right, #f5faff 30%, #ffffff 70%);
+  padding: 3rem 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	height: 50vh;
+}
+
+.about-me::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background: url("https://via.placeholder.com/100x100") repeat;
+  z-index: 1;
+  opacity: 0.3; /* Deixa as bolinhas mais sutis */
+}
+
+.about-me-content {
+  display: flex;
+	justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  z-index: 2; /* Garante que o conteúdo fique acima do fundo */
+}
+
+.profile-picture {
+  position: absolute;
+	align-self: center;
+  margin-left: auto;
+  left: 25%;
+  transform: translateX(-50%); /* Centraliza na divisão */
+  z-index: 3; /* Garante que a imagem fique acima do fundo */
+}
+
+.profile-picture img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+  flex: 1;
+  padding-left: 15rem; /* Para afastar o texto da imagem */
+}
+
+.profile-info h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.profile-info .profession {
+  font-size: 1.25rem;
+  color: #007bff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.profile-info .qualifications {
+  font-size: 1rem;
+  color: #6c757d;
+}

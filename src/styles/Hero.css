@@ -1,0 +1,33 @@
+.hero {
+  background: linear-gradient(to right, rgba(143, 194, 237, 0.9), rgba(143, 194, 237, 0.2)),
+    url("https://via.placeholder.com/1200x600") center/cover no-repeat;
+  color: #fff;
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+.hero-content {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
